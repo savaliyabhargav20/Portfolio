@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargav Savaliya | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-white tracking-wider">SAVALIYA BHARGAV<span class="text-cyan-400"></span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800">
+            <a href="#about" class="block px-4 py-2 hover:bg-slate-800">About</a>
+            <a href="#skills" class="block px-4 py-2 hover:bg-slate-800">Skills</a>
+            <a href="#projects" class="block px-4 py-2 hover:bg-slate-800">Projects</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-slate-800">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-950 to-slate-950"></div>
+        <div class="max-w-7xl mx-auto px-4 text-center relative z-10 fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Bhargav</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Full-Stack & Vision AI Developer blending robust backend engineering with seamless user experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold rounded-lg transition-all shadow-[0_0_15px_rgba(6,182,212,0.4)]">View Projects</a>
+                <a href="#contact" class="px-8 py-3 border border-slate-700 hover:border-cyan-400 hover:text-cyan-400 font-semibold rounded-lg transition-all">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-slate-400 space-y-6 leading-relaxed text-center">
+                <p>I am a developer based in Ahmedabad, Gujarat, passionate about solving complex problems through code. My journey spans mobile applications, machine learning workflows, and rigorous quality assurance.</p>
+                <p>With experience ranging from building intelligent Python tools at Axcentra to data science and QA workflows at QSpiders, I bring a well-rounded perspective to every project I touch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Column-Wise Layout) -->
+    <section id="skills" class="py-20 bg-slate-950">
+        <div class="max-w-5xl mx-auto px-4 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">My Arsenal</h2>
+            
+            <div class="flex flex-col gap-6">
+                <!-- Category 1 -->
+                <div class="p-6 md:p-8 bg-slate-900 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all hover:shadow-[0_0_20px_rgba(6,182,212,0.1)] group flex flex-col md:flex-row md:items-center gap-6">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Frontend & Mobile</h3>
+                        <p class="text-slate-500 text-sm mt-2">Building responsive and native user interfaces.</p>
+                    </div>
+                    <div class="md:w-2/3 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">HTML, CSS & JavaScript</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Flutter (Cross-Platform)</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Android (Java)</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Next.js & React</span>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="p-6 md:p-8 bg-slate-900 rounded-xl border border-slate-800 hover:border-teal-500/50 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.1)] group flex flex-col md:flex-row md:items-center gap-6">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-teal-400 transition-colors">Backend & AI</h3>
+                        <p class="text-slate-500 text-sm mt-2">Architecting robust databases and ML pipelines.</p>
+                    </div>
+                    <div class="md:w-2/3 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Core Python</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">SQL & PostgreSQL</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Machine Learning & Vision Models</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Node.js & Django</span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="p-6 md:p-8 bg-slate-900 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-all hover:shadow-[0_0_20px_rgba(99,102,241,0.1)] group flex flex-col md:flex-row md:items-center gap-6">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors">QA & Testing</h3>
+                        <p class="text-slate-500 text-sm mt-2">Ensuring reliable and production-ready software.</p>
+                    </div>
+                    <div class="md:w-2/3 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Manual Testing</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Bug Reporting & Tracking</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Jira & Agile Workflows</span>
+                        <span class="px-4 py-2 bg-slate-950 border border-slate-800 rounded-lg text-slate-300 text-sm shadow-sm">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 2: Traintap -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-yellow-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Traintap Web Booking</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-cyan-900/50 text-cyan-400 text-xs rounded-full">HTML/JS</span>
+                        <span class="px-3 py-1 bg-yellow-900/50 text-yellow-400 text-xs rounded-full">SQL</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">A high-performance booking system built with modern web technologies. Relies on complex SQL queries for inventory management and was rigorously validated through manual testing.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/Traintap" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Zenvora -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-pink-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Zenvora</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-pink-900/50 text-pink-400 text-xs rounded-full">Next.js</span>
+                        <span class="px-3 py-1 bg-blue-900/50 text-blue-400 text-xs rounded-full">Tailwind</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">A sleek, modern web platform built with dynamic frontend frameworks to deliver an optimized and highly responsive user experience.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/Zenvora" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: veloxBus-Express -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">veloxBus-Express</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-orange-900/50 text-orange-400 text-xs rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-yellow-900/50 text-yellow-400 text-xs rounded-full">PostgreSQL</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">A comprehensive intercity bus transit management and booking backend, managing routes, ticketing, and user data efficiently.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/VeloxBus-Express" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Customer-Spending-Prediction -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Customer Spending Prediction</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-emerald-900/50 text-emerald-400 text-xs rounded-full">Python</span>
+                        <span class="px-3 py-1 bg-purple-900/50 text-purple-400 text-xs rounded-full">Machine Learning</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">A robust machine learning pipeline designed to analyze purchasing trends and forecast future customer spending behaviors accurately.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/Customer-Spending-Prediction" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 6: Loan-Approval-Classification -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-red-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Loan Approval Classification</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-red-900/50 text-red-400 text-xs rounded-full">Data Science</span>
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-400 text-xs rounded-full">Scikit-Learn</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">An AI-driven classification model built to assess financial risk factors and automate the decision-making process for loan applications.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/Loan-Approval-Classification" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 7: Fruit-Cutting -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-amber-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Fruit Cutting</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-amber-900/50 text-amber-400 text-xs rounded-full">OpenCV</span>
+                        <span class="px-3 py-1 bg-cyan-900/50 text-cyan-400 text-xs rounded-full">Vision AI</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">An interactive computer vision application that detects real-time hand movements, allowing users to slice virtual objects using a webcam.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/Fruit-Cutting-" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 8: trackr -->
+                <div class="bg-slate-950 p-8 rounded-xl border border-slate-800 hover:border-blue-500/50 transition-all hover:-translate-y-1 duration-300 flex flex-col h-full shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">trackr</h3>
+                    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+                        <span class="px-3 py-1 bg-blue-900/50 text-blue-400 text-xs rounded-full">Flutter</span>
+                        <span class="px-3 py-1 bg-teal-900/50 text-teal-400 text-xs rounded-full">Firebase</span>
+                    </div>
+                    <p class="text-slate-400 mb-8 flex-grow text-center text-sm">A cross-platform mobile application designed for seamless personal tracking and data management, offering real-time cloud syncing.</p>
+                    <div class="flex justify-center mt-auto">
+                        <a href="https://github.com/savaliyabhargav20/trackr" target="_blank" class="text-cyan-400 hover:text-white border border-cyan-800 hover:border-cyan-400 px-5 py-2 rounded-lg transition-colors flex items-center gap-2 text-sm w-full justify-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-950">
+        <div class="max-w-5xl mx-auto px-4 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">Let's Connect</h2>
+            <p class="text-center text-slate-400 mb-12">Have a question or want to work together? Drop me a message below.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-slate-900 p-8 md:p-12 rounded-xl border border-slate-800 shadow-2xl">
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col justify-center space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Get In Touch</h3>
+                        <p class="text-slate-400 text-sm">Feel free to reach out directly through email. I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 text-slate-300 hover:text-cyan-400 transition-colors">
+                        <div class="p-3 bg-cyan-900/30 rounded-lg text-cyan-400">
+                            <!-- Email Icon -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500">Email</p>
+                            <a href="mailto:bhargav50080@gmail.com" class="text-lg font-medium">bhargav50080@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 text-slate-300 hover:text-teal-400 transition-colors">
+                        <div class="p-3 bg-teal-900/30 rounded-lg text-teal-400">
+                            <!-- GitHub Icon -->
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500">GitHub</p>
+                            <a href="https://github.com/savaliyabhargav20" target="_blank" class="text-lg font-medium">savaliyabhargav20</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="relative flex flex-col justify-center">
+                    <form id="contact-form" class="space-y-4">
+                        <!-- Email Box -->
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-1">Your Email</label>
+                            <input type="email" id="user-email" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors placeholder-slate-600" placeholder="example@email.com">
+                        </div>
+                        <!-- Mobile Box -->
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-1">Mobile Number (Optional)</label>
+                            <input type="tel" id="user-phone" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors placeholder-slate-600" placeholder="+91 00000 00000">
+                        </div>
+                        <!-- Message Box -->
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-1">Your Message</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors resize-none placeholder-slate-600" placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-lg transition-all shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box (Hidden by default) -->
+                    <div id="success-box" class="absolute inset-0 bg-slate-900/95 backdrop-blur-sm flex items-center justify-center rounded-xl opacity-0 pointer-events-none transition-opacity duration-300 z-10">
+                        <div class="text-center p-6 border border-emerald-500/30 rounded-xl shadow-[0_0_30px_rgba(16,185,129,0.1)] bg-slate-950 w-full max-w-sm">
+                            <div class="w-16 h-16 bg-emerald-900/30 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2">Message Sent Successfully!</h4>
+                            <p class="text-slate-400 text-sm">Thank you for reaching out. I'll get back to you soon.</p>
+                            <button id="close-success" type="button" class="mt-6 px-6 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-colors text-sm w-full">
+                                Send Another Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-slate-500">
+        <p>&copy; 2026 Bhargav Savaliya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
